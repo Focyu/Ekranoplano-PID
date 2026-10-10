@@ -1,0 +1,216 @@
+=== GOTO BLOCKS (Enviando señal) ===
+[GOTO] pid_control/Goto  ->  Tag: PID_ALTURA
+[GOTO] pid_control/Goto1  ->  Tag: positionZ
+[GOTO] pid_control/Goto10  ->  Tag: r
+[GOTO] pid_control/Goto11  ->  Tag: ALTURA_sp
+[GOTO] pid_control/Goto12  ->  Tag: theta
+[GOTO] pid_control/Goto13  ->  Tag: phi
+[GOTO] pid_control/Goto14  ->  Tag: psi
+[GOTO] pid_control/Goto15  ->  Tag: ROLL_sp
+[GOTO] pid_control/Goto16  ->  Tag: PID_ALERON
+[GOTO] pid_control/Goto17  ->  Tag: PID_ELEVATOR
+[GOTO] pid_control/Goto18  ->  Tag: YAW_sp
+[GOTO] pid_control/Goto19  ->  Tag: PID_TIMON
+[GOTO] pid_control/Goto2  ->  Tag: orientationZ
+[GOTO] pid_control/Goto20  ->  Tag: VELOCIDADX_ACTUAL
+[GOTO] pid_control/Goto21  ->  Tag: PID_VEL
+[GOTO] pid_control/Goto22  ->  Tag: u_yaw
+[GOTO] pid_control/Goto23  ->  Tag: px
+[GOTO] pid_control/Goto24  ->  Tag: py
+[GOTO] pid_control/Goto25  ->  Tag: pz
+[GOTO] pid_control/Goto26  ->  Tag: z_in
+[GOTO] pid_control/Goto27  ->  Tag: y_in
+[GOTO] pid_control/Goto28  ->  Tag: x_in
+[GOTO] pid_control/Goto29  ->  Tag: w_in
+[GOTO] pid_control/Goto3  ->  Tag: orientationY
+[GOTO] pid_control/Goto30  ->  Tag: VELOCIDADY_ACTUAL
+[GOTO] pid_control/Goto31  ->  Tag: VELOCIDADZ_ACTUAL
+[GOTO] pid_control/Goto32  ->  Tag: s
+[GOTO] pid_control/Goto33  ->  Tag: ns
+[GOTO] pid_control/Goto34  ->  Tag: VEL_SET
+[GOTO] pid_control/Goto35  ->  Tag: aileron
+[GOTO] pid_control/Goto36  ->  Tag: elevator
+[GOTO] pid_control/Goto37  ->  Tag: rudder
+[GOTO] pid_control/Goto38  ->  Tag: ENABLE_FLIGHT
+[GOTO] pid_control/Goto4  ->  Tag: orientationX
+[GOTO] pid_control/Goto5  ->  Tag: orientationW
+[GOTO] pid_control/Goto6  ->  Tag: positionY
+[GOTO] pid_control/Goto7  ->  Tag: positionX
+[GOTO] pid_control/Goto8  ->  Tag: p
+[GOTO] pid_control/Goto9  ->  Tag: q
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto10  ->  Tag: psi_interno
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto13  ->  Tag: z_interno
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto14  ->  Tag: STATE_TURBU1
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto15  ->  Tag: w_wind
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto16  ->  Tag: Va_out
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto17  ->  Tag: u2
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto18  ->  Tag: X_modelOut
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto19  ->  Tag: XDOT
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto2  ->  Tag: h
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto20  ->  Tag: v2
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto21  ->  Tag: w2
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto22  ->  Tag: z2
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto23  ->  Tag: Integrator_OUT
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto24  ->  Tag: SUMOLA1
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto25  ->  Tag: SUMOLA
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto26  ->  Tag: STATE_TURBU
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto27  ->  Tag: v_wind
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto3  ->  Tag: b
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto4  ->  Tag: WAV
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto5  ->  Tag: WAV2
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto6  ->  Tag: Com_aire
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto7  ->  Tag: Colch_desli
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto8  ->  Tag: phi_interno
+[GOTO] pid_control/SUBSYSTEM_MODEL/Goto9  ->  Tag: theta_interno
+
+=== FROM BLOCKS (Recibiendo señal) ===
+[FROM] pid_control/From  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From1  <-  Tag: VEL_SET
+[FROM] pid_control/From10  <-  Tag: y_in
+[FROM] pid_control/From11  <-  Tag: orientationX
+[FROM] pid_control/From12  <-  Tag: z_in
+[FROM] pid_control/From13  <-  Tag: orientationW
+[FROM] pid_control/From14  <-  Tag: positionY
+[FROM] pid_control/From15  <-  Tag: positionX
+[FROM] pid_control/From16  <-  Tag: y_in
+[FROM] pid_control/From17  <-  Tag: z_in
+[FROM] pid_control/From18  <-  Tag: w_in
+[FROM] pid_control/From19  <-  Tag: positionZ
+[FROM] pid_control/From2  <-  Tag: PID_VEL
+[FROM] pid_control/From20  <-  Tag: PID_ALTURA
+[FROM] pid_control/From21  <-  Tag: PID_ALTURA
+[FROM] pid_control/From22  <-  Tag: PID_ALTURA
+[FROM] pid_control/From23  <-  Tag: theta
+[FROM] pid_control/From24  <-  Tag: theta
+[FROM] pid_control/From25  <-  Tag: phi
+[FROM] pid_control/From26  <-  Tag: phi
+[FROM] pid_control/From27  <-  Tag: phi
+[FROM] pid_control/From28  <-  Tag: psi
+[FROM] pid_control/From29  <-  Tag: psi
+[FROM] pid_control/From3  <-  Tag: positionZ
+[FROM] pid_control/From30  <-  Tag: psi
+[FROM] pid_control/From31  <-  Tag: theta
+[FROM] pid_control/From32  <-  Tag: ROLL_sp
+[FROM] pid_control/From33  <-  Tag: PID_ALERON
+[FROM] pid_control/From34  <-  Tag: PID_ALERON
+[FROM] pid_control/From35  <-  Tag: PID_ELEVATOR
+[FROM] pid_control/From36  <-  Tag: PID_ELEVATOR
+[FROM] pid_control/From37  <-  Tag: YAW_sp
+[FROM] pid_control/From38  <-  Tag: PID_TIMON
+[FROM] pid_control/From39  <-  Tag: PID_TIMON
+[FROM] pid_control/From4  <-  Tag: ALTURA_sp
+[FROM] pid_control/From40  <-  Tag: PID_TIMON
+[FROM] pid_control/From41  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From42  <-  Tag: PID_VEL
+[FROM] pid_control/From43  <-  Tag: u_yaw
+[FROM] pid_control/From44  <-  Tag: px
+[FROM] pid_control/From45  <-  Tag: py
+[FROM] pid_control/From46  <-  Tag: pz
+[FROM] pid_control/From47  <-  Tag: px
+[FROM] pid_control/From48  <-  Tag: py
+[FROM] pid_control/From49  <-  Tag: pz
+[FROM] pid_control/From5  <-  Tag: positionZ
+[FROM] pid_control/From50  <-  Tag: x_in
+[FROM] pid_control/From51  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From52  <-  Tag: VELOCIDADY_ACTUAL
+[FROM] pid_control/From53  <-  Tag: VELOCIDADZ_ACTUAL
+[FROM] pid_control/From54  <-  Tag: x_in
+[FROM] pid_control/From55  <-  Tag: w_in
+[FROM] pid_control/From56  <-  Tag: y_in
+[FROM] pid_control/From57  <-  Tag: z_in
+[FROM] pid_control/From58  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From59  <-  Tag: VELOCIDADY_ACTUAL
+[FROM] pid_control/From6  <-  Tag: w_in
+[FROM] pid_control/From60  <-  Tag: VELOCIDADZ_ACTUAL
+[FROM] pid_control/From61  <-  Tag: s
+[FROM] pid_control/From62  <-  Tag: ns
+[FROM] pid_control/From63  <-  Tag: s
+[FROM] pid_control/From64  <-  Tag: ns
+[FROM] pid_control/From65  <-  Tag: y_in
+[FROM] pid_control/From66  <-  Tag: z_in
+[FROM] pid_control/From67  <-  Tag: w_in
+[FROM] pid_control/From68  <-  Tag: px
+[FROM] pid_control/From69  <-  Tag: py
+[FROM] pid_control/From7  <-  Tag: orientationZ
+[FROM] pid_control/From70  <-  Tag: pz
+[FROM] pid_control/From71  <-  Tag: x_in
+[FROM] pid_control/From72  <-  Tag: positionX
+[FROM] pid_control/From73  <-  Tag: ENABLE_FLIGHT
+[FROM] pid_control/From74  <-  Tag: ENABLE_FLIGHT
+[FROM] pid_control/From77  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From8  <-  Tag: x_in
+[FROM] pid_control/From9  <-  Tag: orientationY
+[FROM] pid_control/SUBSYSTEM_MODEL/From  <-  Tag: phi_interno
+[FROM] pid_control/SUBSYSTEM_MODEL/From10  <-  Tag: X_modelOut
+[FROM] pid_control/SUBSYSTEM_MODEL/From11  <-  Tag: XDOT
+[FROM] pid_control/SUBSYSTEM_MODEL/From12  <-  Tag: u2
+[FROM] pid_control/SUBSYSTEM_MODEL/From13  <-  Tag: v2
+[FROM] pid_control/SUBSYSTEM_MODEL/From14  <-  Tag: w2
+[FROM] pid_control/SUBSYSTEM_MODEL/From15  <-  Tag: z2
+[FROM] pid_control/SUBSYSTEM_MODEL/From16  <-  Tag: Integrator_OUT
+[FROM] pid_control/SUBSYSTEM_MODEL/From17  <-  Tag: SUMOLA1
+[FROM] pid_control/SUBSYSTEM_MODEL/From18  <-  Tag: SUMOLA
+[FROM] pid_control/SUBSYSTEM_MODEL/From19  <-  Tag: STATE_TURBU
+[FROM] pid_control/SUBSYSTEM_MODEL/From21  <-  Tag: v_wind
+[FROM] pid_control/SUBSYSTEM_MODEL/From22  <-  Tag: SUMOLA1
+[FROM] pid_control/SUBSYSTEM_MODEL/From23  <-  Tag: SUMOLA
+[FROM] pid_control/SUBSYSTEM_MODEL/From3  <-  Tag: theta_interno
+[FROM] pid_control/SUBSYSTEM_MODEL/From4  <-  Tag: psi_interno
+[FROM] pid_control/SUBSYSTEM_MODEL/From5  <-  Tag: STATE_TURBU1
+[FROM] pid_control/SUBSYSTEM_MODEL/From7  <-  Tag: w_wind
+[FROM] pid_control/SUBSYSTEM_MODEL/From8  <-  Tag: z_interno
+[FROM] pid_control/SUBSYSTEM_MODEL/From9  <-  Tag: Va_out
+
+=== TO WORKSPACE BLOCKS (Guardando en Workspace) ===
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace  >>  Variable: states
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace1  >>  Variable: control
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace10  >>  Variable: CL_w_OGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace11  >>  Variable: CQ
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace12  >>  Variable: CL_h_OGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace13  >>  Variable: Cl
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace14  >>  Variable: Cm
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace15  >>  Variable: Cn
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace16  >>  Variable: alpha
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace17  >>  Variable: beta
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace18  >>  Variable: CL_h_IGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace19  >>  Variable: CD_iw_IGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace2  >>  Variable: LD
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace20  >>  Variable: CD_ih_IGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace21  >>  Variable: Fgx
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace22  >>  Variable: Fgy
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace23  >>  Variable: Fgz
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace24  >>  Variable: Ftx
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace25  >>  Variable: Fty
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace26  >>  Variable: Ftz
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace27  >>  Variable: Fax
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace28  >>  Variable: Fay
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace29  >>  Variable: Faz
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace3  >>  Variable: CL_w_IGE
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace30  >>  Variable: Power
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace31  >>  Variable: Energy
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace32  >>  Variable: Power_Demand
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace33  >>  Variable: Load_Torque
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace34  >>  Variable: SumOLA
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace35  >>  Variable: SumOLA1
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace4  >>  Variable: Fbx
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace5  >>  Variable: Fby
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace6  >>  Variable: Fbz
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace7  >>  Variable: Mbx
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace8  >>  Variable: Mby
+[TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace9  >>  Variable: Mbz
+[TO WORKSPACE] pid_control/To Workspace  >>  Variable: control_out
+[TO WORKSPACE] pid_control/To Workspace1  >>  Variable: altura_sp
+[TO WORKSPACE] pid_control/To Workspace10  >>  Variable: pid_u
+[TO WORKSPACE] pid_control/To Workspace11  >>  Variable: estado_z
+[TO WORKSPACE] pid_control/To Workspace12  >>  Variable: estado_phi
+[TO WORKSPACE] pid_control/To Workspace13  >>  Variable: estado_theta
+[TO WORKSPACE] pid_control/To Workspace14  >>  Variable: estado_psi
+[TO WORKSPACE] pid_control/To Workspace15  >>  Variable: estado_u
+[TO WORKSPACE] pid_control/To Workspace2  >>  Variable: pid_h
+[TO WORKSPACE] pid_control/To Workspace3  >>  Variable: roll_sp
+[TO WORKSPACE] pid_control/To Workspace4  >>  Variable: pid_roll
+[TO WORKSPACE] pid_control/To Workspace5  >>  Variable: theta_sp
+[TO WORKSPACE] pid_control/To Workspace6  >>  Variable: pid_theta
+[TO WORKSPACE] pid_control/To Workspace7  >>  Variable: yaw_sp
+[TO WORKSPACE] pid_control/To Workspace8  >>  Variable: pid_yaw
+[TO WORKSPACE] pid_control/To Workspace9  >>  Variable: u_set

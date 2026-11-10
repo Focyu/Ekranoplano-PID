@@ -20,7 +20,6 @@ pid_control/Constant_U
 pid_control/Coordinate Transformation Conversion
 pid_control/Demux
 pid_control/Demux1
-pid_control/Demux2
 pid_control/Display
 pid_control/From
 pid_control/From1
@@ -95,7 +94,10 @@ pid_control/From71
 pid_control/From72
 pid_control/From73
 pid_control/From74
+pid_control/From75
+pid_control/From76
 pid_control/From77
+pid_control/From78
 pid_control/From8
 pid_control/From9
 pid_control/Gain
@@ -135,11 +137,9 @@ pid_control/Goto31
 pid_control/Goto32
 pid_control/Goto33
 pid_control/Goto34
-pid_control/Goto35
-pid_control/Goto36
-pid_control/Goto37
 pid_control/Goto38
 pid_control/Goto4
+pid_control/Goto40
 pid_control/Goto5
 pid_control/Goto6
 pid_control/Goto7
@@ -163,17 +163,11 @@ pid_control/Manual Switch1
 pid_control/Mux
 pid_control/Mux1
 pid_control/Mux2
-pid_control/Mux3
 pid_control/Mux4
 pid_control/Mux5
 pid_control/Mux6
 pid_control/Mux7
 pid_control/Mux8
-pid_control/Nonlinear Second-Order Actuator
-pid_control/Nonlinear Second-Order Actuator1
-pid_control/Nonlinear Second-Order Actuator2
-pid_control/Nonlinear Second-Order Actuator3
-pid_control/Nonlinear Second-Order Actuator4
 pid_control/PID ALERON
 pid_control/PID VELOCIDAD
 pid_control/Publish
@@ -185,9 +179,6 @@ pid_control/Rate Limiter2
 pid_control/Relay-Enable-Flight
 pid_control/Repeating
 Sequence
-pid_control/Repeating
-Sequence
-Stair
 pid_control/Repeating
 Sequence1
 pid_control/SUBSYSTEM_MODEL
@@ -370,16 +361,37 @@ pid_control/Subsystem
 pid_control/Subsystem/u
 pid_control/Subsystem/PID TIIMON
 pid_control/Subsystem/y
-pid_control/Subsystem1
-pid_control/Subsystem1/u
-pid_control/Subsystem1/Enable
-pid_control/Subsystem1/PID ELEVATOR
-pid_control/Subsystem1/y
-pid_control/Subsystem2
-pid_control/Subsystem2/u
-pid_control/Subsystem2/Enable
-pid_control/Subsystem2/PID ALTURA
-pid_control/Subsystem2/y
+pid_control/Subsystem-AlturaPID
+pid_control/Subsystem-AlturaPID/u
+pid_control/Subsystem-AlturaPID/In2
+pid_control/Subsystem-AlturaPID/In1
+pid_control/Subsystem-AlturaPID/In3
+pid_control/Subsystem-AlturaPID/roll_actual
+pid_control/Subsystem-AlturaPID/elevador
+pid_control/Subsystem-AlturaPID/Enable
+pid_control/Subsystem-AlturaPID/Constant3
+pid_control/Subsystem-AlturaPID/Demux1
+pid_control/Subsystem-AlturaPID/Demux3
+pid_control/Subsystem-AlturaPID/Discrete Derivative
+pid_control/Subsystem-AlturaPID/Discrete Derivative1
+pid_control/Subsystem-AlturaPID/From
+pid_control/Subsystem-AlturaPID/Goto41
+pid_control/Subsystem-AlturaPID/Goto42
+pid_control/Subsystem-AlturaPID/MATLAB Function1
+pid_control/Subsystem-AlturaPID/Mux9
+pid_control/Subsystem-AlturaPID/PID ALTURA
+pid_control/Subsystem-AlturaPID/RL Agent
+pid_control/Subsystem-AlturaPID/Selector
+pid_control/Subsystem-AlturaPID/y
+pid_control/Subsystem-AlturaPID/y1
+pid_control/Subsystem-AlturaPitch
+pid_control/Subsystem-AlturaPitch/u
+pid_control/Subsystem-AlturaPitch/u1
+pid_control/Subsystem-AlturaPitch/Enable
+pid_control/Subsystem-AlturaPitch/Constant
+pid_control/Subsystem-AlturaPitch/Demux
+pid_control/Subsystem-AlturaPitch/PID ELEVATOR
+pid_control/Subsystem-AlturaPitch/y
 pid_control/Sum1
 pid_control/Sum2
 pid_control/Sum3
@@ -405,7 +417,10 @@ pid_control/To Workspace6
 pid_control/To Workspace7
 pid_control/To Workspace8
 pid_control/To Workspace9
+pid_control/Unit Delay
 pid_control/Unit Delay2
 pid_control/Unit Delay3
-pid_control/controlsig
+pid_control/Unit Delay4
+pid_control/Unit Delay5
+pid_control/Unit Delay6
 pid_control/nominal_control

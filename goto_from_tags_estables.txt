@@ -28,11 +28,9 @@
 [GOTO] pid_control/Goto32  ->  Tag: s
 [GOTO] pid_control/Goto33  ->  Tag: ns
 [GOTO] pid_control/Goto34  ->  Tag: VEL_SET
-[GOTO] pid_control/Goto35  ->  Tag: aileron
-[GOTO] pid_control/Goto36  ->  Tag: elevator
-[GOTO] pid_control/Goto37  ->  Tag: rudder
 [GOTO] pid_control/Goto38  ->  Tag: ENABLE_FLIGHT
 [GOTO] pid_control/Goto4  ->  Tag: orientationX
+[GOTO] pid_control/Goto40  ->  Tag: e_Pitch
 [GOTO] pid_control/Goto5  ->  Tag: orientationW
 [GOTO] pid_control/Goto6  ->  Tag: positionY
 [GOTO] pid_control/Goto7  ->  Tag: positionX
@@ -62,6 +60,8 @@
 [GOTO] pid_control/SUBSYSTEM_MODEL/Goto7  ->  Tag: Colch_desli
 [GOTO] pid_control/SUBSYSTEM_MODEL/Goto8  ->  Tag: phi_interno
 [GOTO] pid_control/SUBSYSTEM_MODEL/Goto9  ->  Tag: theta_interno
+[GOTO] pid_control/Subsystem-AlturaPID/Goto41  ->  Tag: altura_g
+[GOTO] pid_control/Subsystem-AlturaPID/Goto42  ->  Tag: pitch_g
 
 === FROM BLOCKS (Recibiendo señal) ===
 [FROM] pid_control/From  <-  Tag: VELOCIDADX_ACTUAL
@@ -137,7 +137,10 @@
 [FROM] pid_control/From72  <-  Tag: positionX
 [FROM] pid_control/From73  <-  Tag: ENABLE_FLIGHT
 [FROM] pid_control/From74  <-  Tag: ENABLE_FLIGHT
+[FROM] pid_control/From75  <-  Tag: w_wind
+[FROM] pid_control/From76  <-  Tag: phi
 [FROM] pid_control/From77  <-  Tag: VELOCIDADX_ACTUAL
+[FROM] pid_control/From78  <-  Tag: theta
 [FROM] pid_control/From8  <-  Tag: x_in
 [FROM] pid_control/From9  <-  Tag: orientationY
 [FROM] pid_control/SUBSYSTEM_MODEL/From  <-  Tag: phi_interno
@@ -160,6 +163,7 @@
 [FROM] pid_control/SUBSYSTEM_MODEL/From7  <-  Tag: w_wind
 [FROM] pid_control/SUBSYSTEM_MODEL/From8  <-  Tag: z_interno
 [FROM] pid_control/SUBSYSTEM_MODEL/From9  <-  Tag: Va_out
+[FROM] pid_control/Subsystem-AlturaPID/From  <-  Tag: altura_g
 
 === TO WORKSPACE BLOCKS (Guardando en Workspace) ===
 [TO WORKSPACE] pid_control/SUBSYSTEM_MODEL/To Workspace  >>  Variable: states
@@ -213,4 +217,4 @@
 [TO WORKSPACE] pid_control/To Workspace6  >>  Variable: pid_theta
 [TO WORKSPACE] pid_control/To Workspace7  >>  Variable: yaw_sp
 [TO WORKSPACE] pid_control/To Workspace8  >>  Variable: pid_yaw
-[TO WORKSPACE] pid_control/To Workspace9  >>  Variable: u_set
+[TO WORKSPACE] pid_control/To Workspace9  >>  Variable: u_actual

@@ -1,7 +1,7 @@
 ==========================================================
 REPORTE DE CÓDIGO INTERNO - MATLAB FUNCTIONS
 Modelo: pid_control
-Fecha: 10-Oct-2026 16:52:41
+Fecha: 10-Nov-2026 18:43:40
 ==========================================================
 
 ----------------------------------------------------------
@@ -436,4 +436,30 @@ function x_reset = fcn(x)
     x_reset(12) = 0.0;   % fija z_NED = 0 (superficie del agua)
 end
 
+
+----------------------------------------------------------
+BLOQUE [16]: pid_control/Subsystem-AlturaPID/MATLAB Function1
+----------------------------------------------------------
+function [reward, isdone] = fcn(error_altura, error_pitch, altura_actual, roll_actual, elevador)
+% 1. PESOS DE PENALIZACIÓN 
+W_alt = 500;
+W_pit = 250;
+W_esfuerzo = 5000; 
+
+% 2. CÁLCULO DEL REWARD CONTINUO
+reward = -(W_alt * error_altura^2 + W_pit * error_pitch^2 + W_esfuerzo * elevador^2);
+
+% 3. CASTIGO DIRECTO POR SATURACIÓN (Límite físico del elevador)
+if abs(elevador) >= 0.145 
+    reward = reward - 50; 
+end
+
+% 4. LÍMITES FATALES (Margen profundo a -5.0m para aprendizaje inicial)
+if altura_actual <= -5.0 || abs(error_pitch) > 0.8 || abs(roll_actual) > 1.0
+    reward = reward - 1000; 
+    isdone = true;          
+else
+    isdone = false;         
+end
+end
 
